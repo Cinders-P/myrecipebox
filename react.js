@@ -1,0 +1,1 @@
+ReactDOM.render(React.createElement(BoardComponent, null), document.getElementById('wrapper'));

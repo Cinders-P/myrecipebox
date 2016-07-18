@@ -1,0 +1,70 @@
+body,
+	background-color: rgba(48, 16, 6, 0.95) !important
+
+header
+	text-align: center
+	& h1
+		color: white
+		font-size: 3rem
+		margin-top: 10vh
+		margin-bottom: 2vh
+
+.container
+	display: flex
+	flex-direction: column
+	align-items: center
+
+.brownBox
+	position: relative
+	box-sizing: border-box
+	width: 100vw
+	max-width: 800px
+	min-height: 400px
+	margin-bottom: 220px
+	border: 50px solid rgb(144, 114, 78)
+	background-color: rgb(50, 40, 29)
+	box-shadow: 0 200px 0px rgb(91, 69, 45), inset 0 200px 0 rgb(40, 31, 22), 40px 220px 20px 40px rgba(0,0,0,0.5)
+	padding: 30px
+
+.btn-info
+	position: absolute
+	right: 0
+	top: 0
+	transform: translate(20%, -80%)
+
+@media (max-width: 500px)
+	.brownBox
+		border-width: 30px
+		box-shadow: 0 100px 0px rgb(91, 69, 45), inset 0 100px 0 rgb(40, 31, 22), 40px 120px 20px 20px rgba(0,0,0,0.5)
+
+#footer
+	color: white
+	margin-bottom: 10px
+
+	& a
+		color: gold
+		text-decoration: none
+
+h5
+	cursor: pointer
+
+.recipeBox
+	position: relative
+	left: 50%
+	transform: translateX(-50%)
+	padding: 20px
+	background-color: white
+	border: 1px solid rgba(0,0,0,0.2)
+	box-shadow: inset 0 -7px 30px -15px lightgray
+	&:last-of-type
+		min-height: 180px
+	width: 70vw
+	max-width: 400px
+	& > .buttons
+		position: absolute
+		bottom: 8px
+		right: 8px
+.no-space
+	min-height: 100px
+	& > p
+		margin-bottom: 0
